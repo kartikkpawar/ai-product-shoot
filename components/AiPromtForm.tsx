@@ -13,7 +13,6 @@ import {
 import { Download, GpuIcon, ScanSearchIcon } from "lucide-react";
 import { useState } from "react";
 import { FileUpload } from "./ui/file-upload";
-import { PlaceholdersAndVanishInput } from "./ui/placeholders-and-vanish-input";
 import Image from "next/image";
 import {
   Dialog,
