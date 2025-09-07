@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Sparkles, Zap, Target, Palette } from "lucide-react";
 import { Cover } from "@/components/ui/cover";
+import Link from "next/link";
 
 export default function Home() {
   const features = [
@@ -61,19 +62,21 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-              <Button
-                size="lg"
-                className=" hover:shadow-glow transition-all duration-300 px-8 py-6 text-lg font-semibold"
-              >
-                <Sparkles className="mr-2 h-5 w-5" />
-                Start Creating for Free
-              </Button>
+              <Link href={"#ai-prompt"} className="cursor-pointer">
+                <Button
+                  size="lg"
+                  className=" hover:shadow-glow transition-all duration-300 px-8 py-6 text-lg font-semibold"
+                >
+                  <Sparkles className="mr-2 h-5 w-5" />
+                  Start Creating for Free
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-20">
+      <section className="py-20" id="ai-prompt">
         <div className="container mx-auto px-4">
           <AiPromtForm />
         </div>
@@ -123,13 +126,15 @@ export default function Home() {
               Join thousands of creators and businesses using AI to elevate
               their visual content
             </p>
-            <Button
-              size="lg"
-              className="hover:shadow-glow transition-all duration-300 px-8 py-6 text-lg font-semibold"
-            >
-              <Sparkles className="mr-2 h-5 w-5" />
-              Get Started Now
-            </Button>
+            <Link href={"#ai-prompt"} className="cursor-pointer">
+              <Button
+                size="lg"
+                className="hover:shadow-glow transition-all duration-300 px-8 py-6 text-lg font-semibold"
+              >
+                <Sparkles className="mr-2 h-5 w-5" />
+                Get Started Now
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

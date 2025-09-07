@@ -130,6 +130,7 @@ export const AiPromtForm = () => {
         <Textarea
           placeholder="Type what you want us to generate"
           onChange={(event) => setProductInput(event.target.value)}
+          value={productInput}
           className="resize-none"
           rows={10}
         />
